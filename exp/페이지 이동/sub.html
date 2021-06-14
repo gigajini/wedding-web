@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div02{
+            background-color: olive;
+            width: 100px;
+            height: 500px;;
+        }
+    </style>
+</head>
+<body>
+    <div id="div03"></div>
+    <div id="div02">여기는 div02 영역입니다</div>
+    <button></button>
+
+</body>
+<script>
+    $("button").click(function(){
+    $("#div03").load("sub.html");
+    $("#div02").remove();
+  });
+</script>
+</html>

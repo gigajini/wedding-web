@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body, ul, li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+a {
+  color:inherit;
+  text-decoration:none;
+}
+/* 노말라이즈 끝 */
+/* 라이브러리 시작 */
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.bg-black {
+  background-color:black;
+}
+
+.color-white {
+  color:white;
+}
+
+.text-align-center {
+  text-align:center;
+}
+.float-gird::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.float-gird > *{
+  float:left;
+  box-sizing:border-box;
+}
+/* 라이브러리 끝 */
+/* 커스텀 시작 */
+.con-min-width {
+  min-width:1200px;
+}
+
+.con {
+  width:1200px;
+}
+.block {
+  display:block;
+}
+/* 커스텀 끝 */
+/* logo 시작 */
+.logo {
+  font-size:3rem;
+  display:inline-block;
+  padding:20px 0;
+
+}
+
+/* logo 끝 */
+/* logo bar 시작 */
+.logo-bar {
+  background-color:black;
+  color:white;
+}
+
+/* logo bar 끝 */
+
+/* 메뉴바 시작 */
+.menu-bar {
+  background-color:black;
+  color:white;
+}
+/* 메뉴바 끝 */
+/* 메뉴바 - 메뉴1 시작 */
+.menu-bar__menu-1 ul > li {
+  width:25%;
+}
+
+.menu-bar__menu-1 ul > li > a{
+  font-size:1.5rem;
+  text-align:center;
+  padding:20px 0;
+  border-radius:10px 10px 0 0;
+}
+
+.menu-bar__menu-1 ul > li:hover > a{
+  background-color:white;
+  color:black;
+}
+
+/* 메뉴바 - 메뉴1 끝 */
+
+#div01{
+    width: 500px;
+    height: 300px;
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+    <header class="logo-bar con-min-width">
+        <div class="com text-align-center">
+          <a href="./" class="logo">
+            <i class="fab fa-jenkins"></i>
+            <span>Developers</span>
+          </a>
+        </div>
+      </header>
+      
+      <header class="menu-bar con-min-width">
+        <div class="con">
+          <nav class="menu-bar__menu-1">
+            <ul class="float-gird">
+              <li>
+                <a href="#" class="block">
+                  <i class="fas fa-home"></i>
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block">
+                  <i class="fas fa-list"></i>
+                  <span>ARTICLES</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block">
+                  <i class="fas fa-link"></i>
+                  <span>LINK</span>
+                </a>
+      
+              </li>
+              <li>
+                <a href="#" class="block">
+                  <i class="fas fa-chart-pie"></i>
+                  <span>STATISTICS</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section>
+          <div id="div03"></div>
+          <div id="div01">여기는 div01영역입니다</div>
+          <button>여기를 클릭하세요</button>
+      </section>
+</body>
+<script>
+  
+
+</script>
+</html>
