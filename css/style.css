@@ -66,6 +66,7 @@ nav{
     width: 1170px;
     height: 98px;
     line-height: 98px;
+    background-color: white;
 }
 /* 로고 */
 nav>h1{
@@ -94,6 +95,16 @@ header>img{
     object-fit: cover;
     object-position: 50% 80%;
 }
+/* 링크 */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav>ul>li>a:hover{
+    color: #d6c7b6;
+}
+
 /* header end */
 
 
@@ -251,20 +262,22 @@ input[type=submit]:hover{
 
 
 /* place star */
-.mapArea div p,h3{
+.mapArea div p{
     text-align: left;
-    margin: 0;
+    margin: 0 40px 20px;
     font-size: 18px;
+    line-height: 1.5em;
     color: #000;
 }
 
 .mapArea h3{
     font-size: 24px;
     font-weight: bold;
+    text-align: left;
+    margin: 40px 40px 30px 40px;
 }
 
 .mapArea div{
-    border: 1px solid red;
     display: inline-block;
     width: 581px;
     height: 450px;
@@ -274,4 +287,43 @@ input[type=submit]:hover{
 
 .mapArea div img{
     object-fit: cover;
+}
+
+.mapArea div img:first-child{
+    object-position: 20%;
+}
+
+.mapArea .mapText:last-child *{
+    text-align: right;
+}
+
+/* place end */
+/* footer start */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #1f1f1f;
+    padding-top: 17px;
+}
+
+footer p {
+    color: #979797;
+    font-size: 14px;
+    margin: 10px;
+}
+
+footer ul{
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer ul li {
+    display: inline-block;
+    font-size: 14px;
+    color: #979797;
+    padding: 0 20px;
+}
+
+footer ul li:first-child{
+    border-right: 1px solid #979797;
 }

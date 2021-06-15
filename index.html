@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아우라스튜디오</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        tr{
-            border: 1px solid black;
-        }
-    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="/js/script.js"></script>
 </head>
 <body>
     <!-- header start -->
@@ -18,9 +15,9 @@
         <nav>
             <h1><img src="img/logo.png" alt="logo"></h1>
             <ul id="gnb">
-                <li>Product</li>
-                <li>Contact Us</li>
-                <li>Place</li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contectUs">Contact Us</a></li>
+                <li><a href="#place">Place</a></li>
             </ul>
         </nav>
         <img src="/img/photo/main01.jpg" alt="introImg">
@@ -37,7 +34,7 @@
     </section>
     <!-- Intro end -->
     <!-- portfolio start -->
-    <section id="portfolio">
+    <section id="portfolio" name="portfolio">
         <h2>PORTFOLIO</h2>
         <img src="img/separator01.png" alt="separator">
         <p>아우라스튜디오만의 따듯한 감성으로 <br> 신랑,신부님에게 좋은 추억이 될 수 있는 웨딩사진을 제공합니다.</p>
@@ -59,7 +56,7 @@
         <div class="paging"></div>
     </section>
     <!-- contectUs start -->
-    <section id="contectUs">
+    <section id="contectUs" name="contectUs">
         <h2>Contat Us</h2>
         <img src="/img/separator02.png" alt="separator">
         <p>단 하나뿐인 잊지 못할 날. <br> 아우라 스튜디오와 특별한 하루를 보내세요.</p>
@@ -73,7 +70,7 @@
     </section>
     <!-- contectUs end -->
     <!-- place start -->
-    <section id="place">
+    <section id="place" name="place">
         <h2>Place</h2>
         <img src="/img/separator01.png" alt="separator">
         <p>클래식&모던 컨셉의 아우라 스튜디오에서 <br> 다양한 웨딩 화보를 경험해보세요</p>
@@ -102,8 +99,8 @@
     </section>
     <!-- place end -->
     <footer>
-        <p>아우라스튜디오 서울시 강남구 신사동 656-7 B1</p>
-        <p>전화 02)517-3698 팩스 02)517-3698 이메일 aurastudio1@naver.com</p>
+        <p>아우라스튜디오 리디자인 홈페이지 입니다.</p>
+        <p>만든이:gigajini 만든 날짜: 2021-06-15</p>
         <p>copyright 2019AURA studio all right reserved</p>
         <ul>
             <li>이용약관</li>
