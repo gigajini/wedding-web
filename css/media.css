@@ -1,0 +1,15 @@
+nav{
+    width: 480px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+h1{
+    margin-left: 50px;
+}
+
+nav>h1>img{
+    width: 230px;
+    height: initial;
+    margin-top: 25px;
+}

@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <title>아우라스튜디오</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/media.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 <body>
     <!-- header start -->
-    <header>
-        <nav>
-            <h1><img src="img/logo.png" alt="logo"></h1>
-            <ul id="gnb">
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contectUs">Contact Us</a></li>
-                <li><a href="#place">Place</a></li>
-            </ul>
-        </nav>
-        <img src="/img/photo/main01.jpg" alt="introImg">
+    <header id="home">
+        <div class="navWrap">
+            <nav>
+                <h1><a href="#home"><img src="./img/logo.png" alt="logo"></a></h1>
+                <ul id="gnb">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contectUs">Contact Us</a></li>
+                    <li><a href="#place">Place</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="./img/photo/main01.jpg" alt="introImg">
     </header>
     <!-- header end -->
     <!-- Intro start -->
@@ -36,7 +39,7 @@
     <!-- portfolio start -->
     <section id="portfolio" name="portfolio">
         <h2>PORTFOLIO</h2>
-        <img src="img/separator01.png" alt="separator">
+        <img src="./img/separator01.png" alt="separator">
         <p>아우라스튜디오만의 따듯한 감성으로 <br> 신랑,신부님에게 좋은 추억이 될 수 있는 웨딩사진을 제공합니다.</p>
         <div id="btn-Port">
             <button>ALL</button>
@@ -45,20 +48,25 @@
             <button>화보 스냅</button>
         </div>
         <div id="port-photo">
-            <img src="/img/photo/01.jpg" alt="01">
-            <img src="/img/photo/02.jpg" alt="02">
-            <img src="/img/photo/03.jpg" alt="03">
-            <img src="/img/photo/04.jpg" alt="04">
-            <img src="/img/photo/05.jpg" alt="05">
-            <img src="/img/photo/06.jpg" alt="06">
-            <img src="/img/photo/07.jpg" alt="07">
+            <div><img src="./img/photo/01.jpg" alt="01"></div>
+            <div><img src="./img/photo/02.jpg" alt="02"></div>
+            <div><img src="./img/photo/03.jpg" alt="03"></div>
+            <div><img src="./img/photo/04.jpg" alt="04"></div>
+            <div><img src="./img/photo/05.jpg" alt="05"></div>
+            <div><img src="./img/photo/06.jpg" alt="06"></div>
+            <div><img src="./img/photo/07.jpg" alt="07"></div>
         </div>
-        <div class="paging"></div>
+
+        <!-- 이미지 자세히보기 구현 -->
+        <div class="light_box">
+            <img src="" alt="라이트박스">
+        </div>
+        
     </section>
     <!-- contectUs start -->
     <section id="contectUs" name="contectUs">
         <h2>Contat Us</h2>
-        <img src="/img/separator02.png" alt="separator">
+        <img src="./img/separator02.png" alt="separator">
         <p>단 하나뿐인 잊지 못할 날. <br> 아우라 스튜디오와 특별한 하루를 보내세요.</p>
         <form id="reservationForm" action="">
             <input type="text" name="EnterName" placeholder="Enter Name">
@@ -72,7 +80,7 @@
     <!-- place start -->
     <section id="place" name="place">
         <h2>Place</h2>
-        <img src="/img/separator01.png" alt="separator">
+        <img src="./img/separator01.png" alt="separator">
         <p>클래식&모던 컨셉의 아우라 스튜디오에서 <br> 다양한 웨딩 화보를 경험해보세요</p>
         <div class="mapArea">
             <div class="mapText">
@@ -82,11 +90,11 @@
                 <p>이메일 주소:aurastudio01@naver.com</p>
                 <p>영업시간:09:03~19:30/월요일 휴무</p>
             </div>
-            <div>
-                <img src="/img/map-강남.png" alt="강남지도">
+            <div id="map">
+                <img src="./img/map-강남.png" alt="강남지도">
             </div>
             <div>
-                <img src="/img/map-인천.png" alt="인천지도">
+                <img src="./img/map-인천.png" alt="인천지도">
             </div>
             <div class="mapText">
                 <h3>아우라스튜디오 인천</h3>
@@ -107,5 +115,16 @@
             <li>개인정보처리방침</li>
         </ul>
     </footer>
+    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=19e8aaef51a668e5fa108eb30930e6bd"></script>
+    <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
+    </script>
 </body>
 </html>
