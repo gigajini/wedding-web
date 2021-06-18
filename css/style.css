@@ -68,6 +68,7 @@ body{
     width: 100%;
     height: 98px;
     background-color: white;
+    z-index: 10;
 }
 
 nav{
@@ -310,7 +311,15 @@ input[type=submit]:hover{
 
 
 /* place star */
-.mapArea div p{
+
+.Pwrap{
+    width: 1170px;
+    height: 450px;
+    position: relative;
+}
+
+
+.placeText{
     text-align: left;
     margin: 0 40px 20px;
     font-size: 18px;
@@ -318,32 +327,35 @@ input[type=submit]:hover{
     color: #000;
 }
 
-.mapArea h3{
+.placeTitle{
     font-size: 24px;
     font-weight: bold;
     text-align: left;
     margin: 40px 40px 30px 40px;
 }
 
-.mapArea div{
+.mapText{
     display: inline-block;
     width: 581px;
     height: 450px;
     margin: -2px;
-    overflow: hidden;
+    padding-left: 20px;
 }
 
-.mapArea div img{
-    object-fit: cover;
+.mapText01{
+    display: inline-block;
+    width: 581px;
+    height: 450px;
+    margin: -2px;
+    padding-right: 20px;
+    float: right;
 }
 
-.mapArea div img:first-child{
-    object-position: 20%;
-}
-
-.mapArea .mapText:last-child *{
+.mapText01>*{
     text-align: right;
 }
+
+
 
 /* place end */
 /* footer start */

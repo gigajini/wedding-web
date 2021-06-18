@@ -82,26 +82,24 @@
         <h2>Place</h2>
         <img src="./img/separator01.png" alt="separator">
         <p>클래식&모던 컨셉의 아우라 스튜디오에서 <br> 다양한 웨딩 화보를 경험해보세요</p>
-        <div class="mapArea">
+        <div class="Pwrap">
             <div class="mapText">
-                <h3>아우라스튜디오 강남</h3>
-                <p>주소:(1세트장)서울시 강남구 신사동 656-7 B1 <br> (2세트장) 서울시 강남구 신사동 655-4 B1</p>
-                <p>전화번호 : 02.517.3698</p>
-                <p>이메일 주소:aurastudio01@naver.com</p>
-                <p>영업시간:09:03~19:30/월요일 휴무</p>
+                <h3 class="placeTitle">아우라스튜디오 강남</h3>
+                <p class="placeText">주소:(1세트장)서울시 강남구 신사동 656-7 B1 <br> (2세트장) 서울시 강남구 신사동 655-4 B1</p>
+                <p class="placeText">전화번호 : 02.517.3698</p>
+                <p class="placeText">이메일 주소:aurastudio01@naver.com</p>
+                <p class="placeText">영업시간:09:03~19:30/월요일 휴무</p>
             </div>
-            <div id="map">
-                <img src="./img/map-강남.png" alt="강남지도">
-            </div>
-            <div>
-                <img src="./img/map-인천.png" alt="인천지도">
-            </div>
-            <div class="mapText">
-                <h3>아우라스튜디오 인천</h3>
-                <p>주소:인천시 남동구 구월동 1139-4 2F, B1</p>
-                <p>전화번호 : 032.421.5935</p>
-                <p>이메일 주소:5month@hanmail.net</p>
-                <p>영업시간:09:03~19:30/화요일 휴무</p>
+            <div id="map" style="width:581px;height:450px;margin: -2px; position: absolute; display: inline-block; left: 582px;"></div>
+        </div>
+        <div class="Pwrap">
+            <div id="map02" style="width:581px;height:450px;margin: -2px; position: absolute; display: inline-block; top: 1px;"></div>
+            <div class="mapText01">
+                <h3 class="placeTitle">아우라스튜디오 인천</h3>
+                <p class="placeText">주소:인천시 남동구 구월동 1139-4 2F, B1</p>
+                <p class="placeText">전화번호 : 032.421.5935</p>
+                <p class="placeText">이메일 주소:5month@hanmail.net</p>
+                <p class="placeText">영업시간:09:03~19:30/월요일 휴무</p>
             </div>
         </div>
     </section>
@@ -115,16 +113,51 @@
             <li>개인정보처리방침</li>
         </ul>
     </footer>
-    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=19e8aaef51a668e5fa108eb30930e6bd"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=19e8aaef51a668e5fa108eb30930e6bd"></script>
     <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
-            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            center: new kakao.maps.LatLng(37.525306043719645, 127.03766769549814), // 지도의 중심좌표
             level: 3 // 지도의 확대 레벨
         };
 
-    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-    var map = new kakao.maps.Map(mapContainer, mapOption); 
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(37.525306043719645, 127.03766769549814); 
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null);    
+
+    var mapContainer = document.getElementById('map02'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.454080479970244, 126.70575513091507), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition  = new kakao.maps.LatLng(37.454080479970244, 126.70575513091507); 
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null);  
     </script>
 </body>
 </html>
