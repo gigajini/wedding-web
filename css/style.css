@@ -118,14 +118,16 @@ h2{
 }
 
 #img_group>div>img{
-    width: 390px;
-    height: 380px;
+    width:100%;
+    height: 100%;
     object-fit: cover;
     margin: 0;
+    text-align: center;
 }
 
 #img_group>div{
     padding: 5px;
+    height: 380px;
 }
 
 /* contact us start */
