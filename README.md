@@ -7,5 +7,5 @@
 
 ### Branch 설명
 
-* version_01 퍼블리싱+카카오 지도 API 연결
-* bootstrap 부트스트랩을 활용한 반응형웹 
+* **version_01** : 퍼블리싱+카카오 지도 API 연결
+* **bootstrap** : 부트스트랩을 활용한 반응형웹 
