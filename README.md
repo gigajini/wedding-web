@@ -5,7 +5,7 @@
 
 * 1page 형식으로 제작.
 
-#### Branch
+### Branch 
 
 * version_01 퍼블리싱+카카오 지도 API 연결
 * bootstrap 부트스트랩을 활용한 반응형웹 
