@@ -1,6 +1,3 @@
-@import "reset.css";
-
-/*폰트*/
 @font-face {
     font-family: 'IBMPlexSansKR-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
@@ -43,347 +40,155 @@ h3{
 p{
     font-family: 'IBMPlexSansKR-Regular';
     text-align: right;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.8em;
     color: #695556;
-    text-align: center;
     margin: 40px 0 100px 0;
 }
 
-body{
-    margin: 0 auto;
-    /* width: 1170px; */
-    height: auto;
-    font-family: 'Roboto', sans-serif;
-}
-/* 폰트 end */
 
-
-/* header start */
-.navWrap{
-    position: fixed;
-    left: 0;
-    right: 0;
+/* banner start */
+.banner_img{
+    height: 650px;
     width: 100%;
-    height: 98px;
-    background-color: white;
-    z-index: 10;
-}
-
-nav{
-    margin: 0 auto;
-    width: 1170px;
-    height: 98px;
-    line-height: 98px;
-    background-color: white;
-}
-/* 로고 */
-nav>h1{
-    float: left;
-    height: inherit;
-}
-
-nav>h1>a>img{
-    margin-top: 20px;
-}
-/* 메뉴 */
-nav>ul{
-    float: right;
-}
-
-nav>ul>li{
-    display: inline-block;
-    padding: 0 24px;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-header>img{
-    width: 100%;
-    height: 705px;
     object-fit: cover;
-    object-position: 50% 70%;
 }
-/* 링크 */
-a{
-    text-decoration: none;
+
+ul>li{
+    padding-top: 5px;
+}
+
+#navbar>ul>li>a{
     color: black;
+    font-size: 16px;
 }
 
-nav>ul>li>a:hover{
-    color: #d6c7b6;
-}
-
-/* header end */
-
-
-/* Intro start */
-.introText{
-    width: 100%;
-    height: 350px;
-    background-color: white;
-}
-#intro div{
-    background-color: white;
-    margin: 0 auto;
-    width: 1170px;
-    height: 325px;
-}
-
-#intro h3{
-    padding-top: 68px;
-}
-
-#intro h4{
-    margin-top: 35px;
-}
-
-#intro {
-    background-image: url(../img/./photo/main02.jpg);
+/* intro start */
+/*
+#intro_img{
+    height: 230px;
+    background-image: url(/img/photo/main02.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
+}
+*/
+
+#intro_img{
+    height: 230px;
     width: 100%;
-    height: 700px;
     object-fit: cover;
-    object-position: 50% 85%;
-}
-/* Intro end */
-
-
-/* portfolio start */
-#portfolio,#place{
-    background-color: white;
-    width: 1170px;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 230px;
 }
 
-/* 버튼 */
-#portfolio button{
-    font-family: 'IBMPlexSansKR-Regular';
-    font-size: 20px;
-    color: white;
-    background-color: #695556;
-    border: none;
-    padding: 10px 30px;
-    margin: 0 5px 90px;
-    cursor: pointer;
-    transition-duration: 0.2s;    /* 버튼 애니메이션 효과*/
+.intro_Text{
+    margin: 15px 0;
 }
 
-#portfolio button:hover {
-    background-color: #3d3131;
+/*  portfolio start   */
+.title{
+    margin-top: 100px;
 }
 
-#portfolio button:first-child{
-    background-color: #483d4b;
-}
-
-/* 이미지 */
-#port-photo{
-    width: 1170px;
-}
-
-#port-photo div{
-    width: 371px;
-    height: 380px;
-    display: inline-block;
-    overflow: hidden;
-    margin:8px;
-}
-
-#port-photo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-#port-photo img:hover{
-    transform: scale(1.1);
-    transition: all 0.7s;
-    filter: brightness(30%);
-}
-
-/* .light_box 에 이미지소스값이 할당되면 실행 */
-.light_box {   /* 평소엔 숨겨뒀다가 이미지 클릭하면 .light_box.visible값이 할당 되면서 보이게 됨 */
-    position: fixed;
-    top:0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    z-index: -10; 
-    cursor: pointer;
-    }
-    .light_box.visible{
-    opacity: 1;
-    z-index: 10;
-    transition: all 0.7s;
-    }
-    .light_box img{
-    position: absolute; 
-    top: 50%; left: 50%;
-    max-height: 75%;
-    max-width: 75%;
-    transform: translate(-50%, -50%);
-    }
-
-
-
-/* portfolio end */
-
-
-/* contectUs start */
-#contectUs{
-    background-color: #1f1f1f;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#contectUs>h2{
-    color: white;
-}
-
-#contectUs>p{
-    color: white;
-}
-
-/* 예약표 */
-#reservationForm{
-    width: 1170px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-    margin-bottom: 115px;
-}
-
-#EnterMessage{
-    grid-column: 1/4;
-    padding-top: 23px;
-}
-
-input:last-child{
-    grid-column: 1/4;
-}
-
-input[type=text]{
-    height: 67px;
-}
-
-input[type=text],textarea{
-    border: 1px solid rgba(255, 255, 255, 0.904);
-    padding: 0 25px;
-    background-color: #1f1f1f;
-    color: white;
-    font-size: 15px;
-}
-
-input[type=submit]{
-    text-align: center;
-    font-size: 18px;
-    font-weight: 300;
-    color: white;
-    border-style: none;
-    background-color: #c2c2c2;
-    height: 65px;
-    width: 230px;
-    margin: 0 auto;
-}
-
-input[type=submit]:hover{
-    background-color:#c2c2c271;
-    cursor: pointer;
-}
-
-/* contectUs end */
-
-
-/* place star */
-
-.Pwrap{
-    width: 1170px;
-    height: 450px;
-    position: relative;
-}
-
-
-.placeText{
-    text-align: left;
-    margin: 0 40px 20px;
-    font-size: 18px;
-    line-height: 1.5em;
-    color: #000;
-}
-
-.placeTitle{
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
-    margin: 40px 40px 30px 40px;
-}
-
-.mapText{
-    display: inline-block;
-    width: 581px;
-    height: 450px;
-    margin: -2px;
-    padding-left: 20px;
-}
-
-.mapText01{
-    display: inline-block;
-    width: 581px;
-    height: 450px;
-    margin: -2px;
-    padding-right: 20px;
-    float: right;
-}
-
-.mapText01>*{
-    text-align: right;
-}
-
-
-
-/* place end */
-/* footer start */
-footer{
-    width: 100%;
-    height: 200px;
-    background-color: #1f1f1f;
-    padding-top: 17px;
-}
-
-footer p {
-    color: #979797;
-    font-size: 14px;
-    margin: 10px;
-}
-
-footer ul{
-    text-align: center;
+h2{
     margin-top: 30px;
 }
 
-footer ul li {
-    display: inline-block;
-    font-size: 14px;
-    color: #979797;
-    padding: 0 20px;
+#subtext>p{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
-footer ul li:first-child{
-    border-right: 1px solid #979797;
+/* btn-style */
+#btn_group{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#btn_group>button{
+    background-color: #695556;
+    color: white;
+    font-family: 'IBMPlexSansKR-Regular';
+    padding: 6px 18px;
+}
+
+#btn_group>button:first-child{
+    background-color: #483d4b;
+}
+
+#img_group>div>img{
+    width: 390px;
+    height: 380px;
+    object-fit: cover;
+    margin: 0;
+}
+
+#img_group>div{
+    padding: 5px;
+}
+
+/* contact us start */
+#contact_section{
+    background-color: #1f1f1f;
+    margin-top:200px;
+}
+
+#form>div>div{
+    margin: 15px 0;
+    padding: 0 6px;
+}
+
+.send_btn{
+    margin-top: 10px;
+    margin-bottom: 70px;
+    color:white;
+    background-color: #c2c2c2;
+    border-color:#adacac ;
+}
+
+.send_btn:hover{
+    background-color: #e2ca99;
+    border-color:#e2ca99 ;
+}
+
+/* place start */
+.place_div{
+    margin-bottom: 15px;
+}
+
+.place_div:last-child{
+    margin-bottom: 80px;
+}
+
+.Placebox{
+    padding: 20px 40px;
+}
+
+.placeText{
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.PlaceTitle{
+    font-family:'IBMPlexSansKR-Bold' ;
+}
+
+/* footer start */
+footer{
+    height: 200px;
+    width: 100%;
+    background-color:#1f1f1f;
+}
+
+
+footer>.row>col-md-12:first-child{
+    margin-top: 50px;
+}
+
+.footerText{
+    font-size: 13px;
+    color: rgb(202, 200, 200);
+    margin: 10px 0;
+    text-align: center;
 }
