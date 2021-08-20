@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+h2{
+    font-size: 31px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 100px 0 45px 0;
+}
+
+h4{
+    text-align: right;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #636363;
+}
+
+h3{
+    font-family: 'IBMPlexSansKR-Regular';
+    text-align: right;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #000; /* 695556 */
+}
+
+p{
+    font-family: 'IBMPlexSansKR-Regular';
+    text-align: right;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #695556;
+    margin: 40px 0 100px 0;
+}
+
+
+/* banner start */
+.banner_img{
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+}
+
+ul>li{
+    padding-top: 5px;
+}
+nav{padding: 5px 0; }
+
+#navbar>ul>li>a{
+    color: black;
+    font-size: 16px;
+    font-family: 'roboto';
+}
+
+#navbar>ul>li>a:hover{
+    color: #483d4b;
+    font-weight: 500;
+}
+
+/* intro start */
+
+.img_box{height: 230px;}
+
+#intro_img{
+    background-image: url("/02_wedding_web(bs)/img/photo/main02.jpg");
+    height: 100%;
+    position: relative;
+    z-index: -10;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* #intro_img{
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+} */
+
+.intro_bg{background-color: #4C594F;}
+
+.intro_Text{
+    margin: 15px 0;
+    color: white;
+}
+
+.eg_font{font-family: 'roboto'; font-size: 300;}
+
+.intro_bg{background-color: #dab588;} /* #9e996f  c3a56e c2a179*/
+
+/*  portfolio start   */
+.title{
+    margin-top: 100px;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+#subtext>p{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* btn-style */
+#btn_group{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#btn_group>button{
+    background-color: #695556;
+    color: white;
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+#btn_group>button:hover{
+    background-color: #e2ca99;
+    border-color:#e2ca99 ;
+}
+
+#btn_group>button:first-child{
+    background-color: #483d4b;
+}
+
+.btn_style{
+    font-size: 15px;
+}
+
+#img_group>div>img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    text-align: center;
+}
+
+#img_group>div{
+    padding: 5px;
+    height: 380px;
+}
+
+/* 클릭시 사진 크게보기 구현 */
+
+.port-photo>img:hover{
+    transition: all 0.7s;
+    filter: brightness(30%);
+    cursor: pointer;
+}
+
+.port-photo>img:hover font{
+    display: block;
+    z-index: 100;
+}
+
+.port-photo{
+    position: relative;
+}
+
+.font{
+    display: none;
+    position: absolute;
+    color: white;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/* .light_box 에 이미지소스값이 할당되면 실행 */
+
+.light_box {   /* 평소엔 숨겨뒀다가 이미지 클릭하면 .light_box.visible값이 할당 되면서 보이게 됨 */
+
+    position: fixed;
+
+    top:0; left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    opacity: 0;
+
+    z-index: -10; 
+
+    cursor: pointer;
+
+    }
+
+    .light_box.visible{
+
+    opacity: 1;
+
+    z-index: 10;
+
+    transition: all 0.7s;
+
+    }
+
+    .light_box img{
+
+    position: absolute; 
+
+    top: 50%; left: 50%;
+
+    max-height: 75%;
+
+    max-width: 75%;
+
+    transform: translate(-50%, -50%);
+
+    }
+
+/* contact us start */
+.contact_section{
+    background-color: #3b3125;
+    margin-top:200px;
+}
+
+#form>div>div{
+    margin: 15px 0;
+    padding: 0 6px;
+}
+
+.send_btn{
+    margin-top: 10px;
+    margin-bottom: 70px;
+    color:white;
+    background-color: #c2c2c2;
+    border-color:#adacac ;
+    padding: 7px 22px;
+}
+
+.send_btn:hover{
+    background-color: #e2ca99;
+    border-color:#e2ca99 ;
+}
+
+/* place start */
+.place_div{
+    margin-bottom: 15px;
+}
+
+.place_div:last-child{
+    margin-bottom: 80px;
+}
+
+.Placebox{
+    padding: 20px 40px;
+}
+
+.placeText{
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.PlaceTitle{
+    font-family:'IBMPlexSansKR-Bold' ;
+}
+
+
+/* footer start */
+footer{
+    height: 200px;
+    width: 100%;
+    background-color:#332F2E;
+}
+
+
+footer>.row>col-md-12:first-child{
+    margin-top: 50px;
+}
+
+.footerText{
+    font-size: 13px;
+    color: rgb(202, 200, 200);
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+/* 미디어쿼리 */
+@media only screen and (max-width: 992px) { 
+    .img_box{height: 200px;}
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+    <!-- 내부페이지 이동-->
+    <a id="home"></a>
+    <!-- nav 상단 고정-->
+     <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#home" style="padding: 15px 10px;">
+                    <img alt="Brand" src="./img/logo.png" class="img-responsive" style="height: 30px; width: auto;">
+                </a>
+                <!-- 햄버거 버튼 :data-target 에 메뉴div 아이디 넣기  -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- 네비게이션 메뉴 -->
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li role="presentation"><a href="#contact_us">CONTACT US</a></li>
+                    <li role="presentation"><a href="#place">PLACE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <img src="./img/photo/main01.jpg" class="banner_img" alt="introImg">
+    </div>
+    </header>
+    <!-- intro start -->
+    <div class="intro_bg">
+        <div class="container">
+            <div class="row" style="margin: 0; padding: 20px 0;">
+                <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4">
+                    <p class="intro_Text">아우라스튜디오만의 따듯한 감성으로 <br> 신랑, 신부님에게 좋은 추억이 될 수 있는 웨딩사진을 제공합니다.</p>
+                </div>
+                <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4">
+                    <p class="intro_Text eg_font">with a warm feeling from aura studio <br> we offer wedding photos to the bride and groom for good memories.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row img_box">
+            <div id="intro_img"></div>
+            <!-- <img src="./img/photo/main02.jpg" alt="메인" id="intro_img"> -->
+        </div>
+    <!-- portfolio start-->
+    <div class="container"> 
+    <!-- 내부페이지 이동-->
+    <a id="portfolio"></a> 
+    <section class="row portfolio"> 
+        <div class="col-md-12 title">
+            <h2>PORTFOLIO</h2>     
+        </div>
+        <div class="col-md-12">
+        <img src="./img/separator01.png" class="img-responsive col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" alt="separator">
+        </div>
+        <div class="col-md-6 col-md-offset-3 " id="subtext">
+            <p>아우라스튜디오만의 따듯한 감성으로 <br> 신랑,신부님에게 좋은 추억이 될 수 있는 웨딩사진을 제공합니다.</p>
+        </div>
+        <div class="col-md-12" id="btn_group">
+            <button class="btn_style btn btn-default" type="button">ALL</button>
+            <button class="btn_style btn btn-default" type="button">갤러리</button>
+            <button class="btn_style btn btn-default" type="button">본식스냅</button>
+            <button class="btn_style btn btn-default" type="button">화보스냅</button>
+        </div>
+
+        <article class="col-xs-12" id="img_group">
+                <div class="col-md-4 col-sm-6 col-xs-12 port-photo"><p class="font">안녕하세요</p><img src="./img/photo/01.jpg" alt="01"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12 port-photo"><img src="./img/photo/02.jpg" alt="02"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12 port-photo"><img src="./img/photo/03.jpg" alt="03"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12 port-photo"><img src="./img/photo/04.jpg" alt="04"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12 port-photo"><img src="./img/photo/05.jpg" alt="05"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12 port-photo"><img src="./img/photo/06.jpg" alt="06"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12 port-photo"><img src="./img/photo/07.jpg" alt="07"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12 port-photo"><img src="./img/photo/08.jpg" alt="08"></div>
+                <div class="col-md-4 col-sm-6 col-xs-12 port-photo"><img src="./img/photo/09.jpg" alt="09"></div>
+        </article>
+        <div class="light_box">
+            <img src="" alt="라이트박스">
+        </div>
+    </section>
+    </div>
+    <!-- Contact Us start-->
+    <section class="row contact_section">
+        <div class="container">
+        <!-- 내부페이지 이동-->
+        <a id="contact_us"></a>  
+            <div class="col-md-12 title">
+                <h2 style="color: white;">Contact Us</h2>           
+            </div>
+            <div class="col-md-12" id="separator">
+                <img src="./img/separator02.png" class="img-responsive col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" alt="separator">
+            </div>
+            <div class="col-md-6 col-md-offset-3" id="subtext">
+                <p style="color: white;">단 하나뿐인 잊지 못할 날. <br> 아우라 스튜디오와 특별한 하루를 보내세요.</p>
+            </div>
+            <div class="col-md-12">
+            <form class="form-inline col-md-10 col-md-offset-1" id="form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="sr-only" for="exampleInputName2"></label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Name" style="width: 100%;">
+                    </div>
+                    <div class="col-md-4">
+                            <label class="sr-only" for="exampleInputName2"></label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Email" style="width: 100%;">
+                    </div>
+                    <div class="col-md-4">
+                            <label class="sr-only" for="exampleInputName2"></label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter subject" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-top: 0;">
+                        <textarea class="form-control" rows="5" style="width: 100%;"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary col-sm-2 col-sm-offset-5 col-xs-12 send_btn ">Send Message</button>
+                    </div> 
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+    <!-- place start-->
+    <section class="row">
+    <div class="container">
+    <!-- 내부페이지 이동-->
+        <a id="place"></a> 
+        <div class="col-md-12 title">
+            <h2>Place</h2>     
+        </div>
+        <div class="col-md-12">
+        <img src="./img/separator01.png" class="img-responsive col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" alt="separator">
+        </div>
+        <div class="row col-md-6 col-md-offset-3 " id="subtext">
+            <p>클래식&모던 컨셉의 아우라 스튜디오에서 <br> 다양한 웨딩 화보를 경험해보세요</p>
+        </div>
+        <div class="row place_div">
+            <div class="col-md-6" style="height:450px;">
+                <div id="map" style="height: inherit; width:100%;"></div>
+            </div>
+            <div class="col-md-6 Placebox">
+                <h3 class="PlaceTitle">아우라스튜디오 강남</h2>
+                <p class="placeText">주소:(1세트장)서울시 강남구 신사동 656-7 B1 <br> (2세트장) 서울시 강남구 신사동 655-4 B1</p>
+                <p class="placeText">전화번호 : 02.517.3698</p>
+                <p class="placeText">이메일 주소:aurastudio01@naver.com</p>
+                <p class="placeText">영업시간:09:03~19:30/월요일 휴무</p>
+            </div>
+        </div>
+        <div class="row place_div">
+            <div class="col-md-6" style="height:450px;">
+                <div id="map02" style="height: inherit; width:100%;"></div>
+            </div>
+            <div class="col-md-6 Placebox">
+                <h3 class="PlaceTitle">아우라스튜디오 인천</h2>
+                <p class="placeText">주소:인천시 남동구 구월동 1139-4 2F, B1</p>
+                <p class="placeText">전화번호 : 032.421.5935</p>
+                <p class="placeText">이메일 주소:aurastudio01@naver.com</p>
+                <p class="placeText">영업시간:09:03~19:30/월요일 휴무</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- footer start-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="footerText">아우라스튜디오 리디자인 홈페이지(bootstrap)</p>
+                </div>
+                <div class="col-md-12">
+                    <p class="footerText">만든이:gigajini</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=19e8aaef51a668e5fa108eb30930e6bd"></script>
+    <script>
+        // 아우라스튜디오 강남
+
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(37.52530817093416, 127.03770798472016), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+        
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        
+        // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+        var mapTypeControl = new kakao.maps.MapTypeControl();
+        
+        // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+        // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+        
+        // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+        var zoomControl = new kakao.maps.ZoomControl();
+        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+
+
+        // 아우라스튜디오 인천
+
+        var mapContainer = document.getElementById('map02'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(37.454245402438204, 126.70577497122638), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+        
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        
+        // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+        var mapTypeControl = new kakao.maps.MapTypeControl();
+        
+        // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+        // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+        
+        // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+        var zoomControl = new kakao.maps.ZoomControl();
+        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+        </script>
+</body>
+</html>
